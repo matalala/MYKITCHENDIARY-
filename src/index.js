@@ -10,7 +10,7 @@ import axios from 'axios';
 import dotenv from "dotenv";
 dotenv.config();
 
-axios.defaults.baseURL = 'https://api-food-production.up.railway.app';
+axios.defaults.baseURL = process.env.REACT_APP_API;
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
